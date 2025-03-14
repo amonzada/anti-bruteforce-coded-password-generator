@@ -1,17 +1,17 @@
-# 🔐 Gerador "Determinístico" de Senhas (Anti-BruteForce)
+# Gerador "Determinístico" de Senhas (Anti-BruteForce)
 
-## 📌 Contexto e Necessidade
+## ❓ Contexto e Necessidade
 
 Com o aumento do número de serviços online, lembrar de senhas seguras para cada plataforma se tornou um desafio. Muitas pessoas reutilizam senhas, o que as torna vulneráveis a ataques como vazamentos de dados e força bruta.
 
 Este gerador de senhas resolve esse problema ao permitir que você memorize **apenas uma chave mestra**, a partir da qual todas as suas senhas são geradas de forma **determinística e segura**. Assim, não há necessidade de armazenar senhas individuais, pois elas podem ser recriadas sempre que necessário.
 
-## 🔥 Impacto na Segurança Digital
+## 🔐 Impacto na Segurança Digital
 
-✅ Evita a reutilização de senhas
-✅ Garante que cada site tenha uma senha única
-✅ Usa algoritmos criptográficos seguros
-✅ Permite a criação de senhas fortes sem precisar armazená-las
+- Evita a reutilização de senhas
+- Garante que cada site tenha uma senha única
+- Usa algoritmos criptográficos seguros
+- Permite a criação de senhas fortes sem precisar armazená-las
 
 ⚠️ **Vulnerabilidades a considerar:**
 - Se alguém descobrir sua **chave mestra**, poderá gerar todas as suas senhas. **Use uma chave mestra forte**
@@ -31,15 +31,17 @@ Dois métodos são disponibilizados:
 ---
 
 ## 🛠 Como Usar
-### Execute o script:
+### Clone o repositório e execute o script:
 
 ```bash
+git clone https://github.com/amonzada/anti-bruteforce-coded-password-generator
+cd anti-bruteforce-coded-password-generator
 python gerador_x.py
 ```
 
 - Insira seu identificador e chave mestra (no arquivo), e o sistema gerará sua senha.
 
-### 📌 Gerador Simples
+### Gerador Simples
 
 📌 **Explicação:**
 - Usa SHA-256 para gerar um hash único.
@@ -50,7 +52,7 @@ python gerador_x.py
 
 ---
 
-### 📌 Gerador Completo
+### Gerador Completo
 
 📌 **Explicação:**
 - Usa **PBKDF2-HMAC-SHA256** para criar um hash seguro com 100.000 iterações.
