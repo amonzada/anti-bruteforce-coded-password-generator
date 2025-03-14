@@ -17,8 +17,8 @@ def gerar_senha(identificador: str, chave_mestra: str, comprimento: int = 16) ->
     return senha
 
 # Exemplo de uso
-servico = "amon@gmail.com"
-chave_mestra = "amon1"
+servico = str(input("Digite o identificador do serviço: "))
+chave_mestra = "amon(editar)"
 
 senha_gerada = gerar_senha(servico, chave_mestra)
 print(f"Senha gerada: {senha_gerada}")
